@@ -27,4 +27,10 @@ public class AmazonPage {
     @FindBy(id = "productTitle")
     public WebElement firstProductElement;
 
+    @FindBy(xpath = "(//img[@class='s-image'])[7]")
+    public WebElement seventhProduct;
+
+    @FindBy(xpath = "(//span[@class='a-offscreen'])[1]")
+    public WebElement productPrice;
+
 }
