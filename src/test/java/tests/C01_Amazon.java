@@ -59,7 +59,7 @@ public class C01_Amazon {
         TakesScreenshot tss= (TakesScreenshot) driver;
         ReusableMethods.getScreenshotAllPage(tss,"amazonNutellaTumSayfa");
 
-        Assert.assertTrue(actualPrice.equals(expectedPrice));
+        Assert.assertEquals(expectedPrice,actualPrice);
 
         Driver.closeDriver();
     }
