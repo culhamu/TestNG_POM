@@ -57,7 +57,7 @@ public class C01_Amazon {
         String expectedPrice="$16.90";
         String actualPrice=amazonPage.productPrice.getText();
         TakesScreenshot tss= (TakesScreenshot) driver;
-        ReusableMethods.getScreenshotAllPage(tss,"amazonNutellaTumSayfa");
+        ReusableMethods.getScreenshot("amazonNutellaTumSayfa");
 
         Assert.assertEquals(expectedPrice,actualPrice);
 
