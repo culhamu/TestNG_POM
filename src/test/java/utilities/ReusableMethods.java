@@ -142,4 +142,15 @@ public class ReusableMethods {
         }
 
     }
+    public static void moveToElement(WebElement target){
+
+        Actions actions =new Actions(Driver.getDriver());
+        actions.moveToElement(target).perform();
+
+    }
+    public static void scrollToElement(WebElement target){
+
+        Actions actions=new Actions(Driver.getDriver());
+        actions.scrollToElement(target).perform();
+    }
 }
