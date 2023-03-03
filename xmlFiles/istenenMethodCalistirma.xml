@@ -2,8 +2,11 @@
 <suite name="istenen class'ı çalıştırma">
     <test name="regression testi">
         <classes>
-            <class name="tests.C01_Amazon"></class>
-            <class name="tests.C04_Herokuapp"></class>
+            <class name="tests.C04_Herokuapp">
+                <methods>
+                    <include name="test01"></include>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

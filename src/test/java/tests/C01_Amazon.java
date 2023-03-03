@@ -56,10 +56,10 @@ public class C01_Amazon {
         amazonPage.seventhProduct.click();
         String expectedPrice="$16.90";
         String actualPrice=amazonPage.productPrice.getText();
-        TakesScreenshot tss= (TakesScreenshot) driver;
+
         ReusableMethods.getScreenshot("amazonNutellaTumSayfa");
 
-        Assert.assertEquals(expectedPrice,actualPrice);
+        Assert.assertTrue(actualPrice.equals(expectedPrice));
 
         Driver.closeDriver();
     }
