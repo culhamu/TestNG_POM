@@ -1,6 +1,7 @@
 package tests;
 
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.EbayPage;
@@ -8,6 +9,9 @@ import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
+
+import java.util.List;
+import java.util.Set;
 
 public class C05_Ebay extends TestBaseRapor {
 
@@ -24,14 +28,18 @@ public class C05_Ebay extends TestBaseRapor {
 
         ebayPage.macbook.click();
 
+        String ilkWHD=Driver.getDriver().getWindowHandle();
         ebayPage.macbookProduct.click();
+        String ikinciWHD ="";
+        Set<String> tumWHD=Driver.getDriver().getWindowHandles();
+        for (String each:tumWHD) {
+            if (!each.equals(ilkWHD)){
+                ikinciWHD=each;
+            }
+        }
+        Driver.getDriver().switchTo().window(ikinciWHD);
+        Assert.assertTrue(ebayPage.resultText.isDisplayed());
 
-
-        SoftAssert softAssert=new SoftAssert();
-
-        softAssert.assertTrue(ebayPage.resultText.isDisplayed());
-
-        softAssert.assertAll();
-
+        Driver.quitDriver();
     }
 }
