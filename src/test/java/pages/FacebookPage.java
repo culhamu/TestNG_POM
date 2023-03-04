@@ -5,13 +5,13 @@ import org.openqa.selenium.support.FindBy;
 
 public class FacebookPage {
 
-    @FindBy(xpath = "(//div[@class='_6lux'])[1]")
+    @FindBy(xpath = "//input[@placeholder='E-posta veya Telefon Numarası']")
     public WebElement emailBox;
 
-    @FindBy(xpath = "(//div[@class='_6lux'])[2]")
+    @FindBy(xpath = "//input[@placeholder='Şifre']")
     public WebElement passwordBox;
 
-    @FindBy(xpath = "//button[@name='login']")
+    @FindBy(xpath = "//button[@class='_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy']")
     public WebElement loginButton;
 
     @FindBy(xpath = "(//a[@role='button'])[2]")
