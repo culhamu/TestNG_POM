@@ -1,16 +1,12 @@
 package tests;
 
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 import pages.EbayPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 import utilities.ReusableMethods;
 import utilities.TestBaseRapor;
-
-import java.util.List;
 import java.util.Set;
 
 public class C05_Ebay extends TestBaseRapor {
