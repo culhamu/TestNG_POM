@@ -2,10 +2,7 @@
 <suite name="istenen testi çalıştırma">
     <test name="regression testi">
         <classes>
-            <class name="tests.C06_Booking">
-                <methods>
-                    <include name="bookingTest01"></include>
-                </methods>
+            <class name="tests.C08_Instagram">
             </class>
         </classes>
     </test>

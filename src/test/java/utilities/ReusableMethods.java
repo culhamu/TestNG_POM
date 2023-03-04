@@ -133,7 +133,7 @@ public class ReusableMethods {
     }
 
     public static void getScreenshotPartialPage(WebElement locate,String isim){
-        File parialElementScreenshot=new File("src/test/java/pageScreenshot/"+isim+".png");
+        File parialElementScreenshot=new File("test-output/"+isim+".png");
         File temporaryPicture=locate.getScreenshotAs(OutputType.FILE);
         try {
             FileUtils.copyFile(temporaryPicture,parialElementScreenshot);
