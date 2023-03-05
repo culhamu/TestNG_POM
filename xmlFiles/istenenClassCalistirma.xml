@@ -2,7 +2,7 @@
 <suite name="istenen class'ı çalıştırma">
     <test name="regression testi">
         <classes>
-            <class name="tests.C08_Instagram"></class>
+            <class name="tests.C07_Facebook"></class>
         </classes>
     </test>
 </suite>
