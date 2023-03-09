@@ -12,4 +12,7 @@ public class MyPage {
 
     @FindBy(xpath = "//span[@class='usertext mr-1']")
     public WebElement loggedCheckControl;
+
+    @FindBy(xpath = "(//*[text()='Eğitimler'])[1]")
+    public WebElement egitimlerOnHeaders;
 }
